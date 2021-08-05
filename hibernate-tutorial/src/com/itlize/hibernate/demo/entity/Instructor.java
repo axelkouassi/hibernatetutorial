@@ -112,8 +112,8 @@ public class Instructor {
 
 	@Override
 	public String toString() {
-		return "Instructor [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
-				+ ", instructorDetail=" + instructorDetail + "]";
+		return "Instructor [id= " + id + ", firstName= " + firstName + ", lastName= " + lastName + ", email= " + email
+				+ ", instructorDetail= " + instructorDetail + "]";
 	}
 
 	public List<Course> getCourses() {

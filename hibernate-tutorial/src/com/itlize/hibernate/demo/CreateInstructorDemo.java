@@ -31,13 +31,9 @@ public class CreateInstructorDemo {
 			// create the objects
 		
 			System.out.println("Creating new instructor object...");
-			Instructor tempInstructor = 
-					new Instructor("Nicholas", "YYY", "Nicholas@itlize.com");
+			Instructor tempInstructor = new Instructor("Nicholas", "YYY", "Nicholas@itlize.com");
 			
-			InstructorDetail tempInstructorDetail =
-					new InstructorDetail(
-							"http://www.youtube.com",
-							"Playing Basketball");		
+			InstructorDetail tempInstructorDetail = new InstructorDetail("http://www.youtube.com","Playing Basketball");		
 			
 			// associate the objects
 			tempInstructor.setInstructorDetail(tempInstructorDetail);
@@ -51,10 +47,14 @@ public class CreateInstructorDemo {
 			// because of CascadeType.ALL
 			//
 			System.out.println("Saving instructor: " + tempInstructor);
-			session.save(tempInstructor);					
+			session.save(tempInstructor);		
+			System.out.println("\nInstructor information: " + tempInstructor);
+			System.out.println("\nInstructor details: " + tempInstructorDetail);
 			
 			// commit transaction
 			session.getTransaction().commit();
+			
+			
 			
 			System.out.println("Done!");
 		}

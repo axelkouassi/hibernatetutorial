@@ -90,7 +90,7 @@ public class InstructorDetail {
 
 	@Override
 	public String toString() {
-		return "InstructorDetail [id=" + id + ", youtubeChannel=" + youtubeChannel + ", hobby=" + hobby + "]";
+		return "InstructorDetail [id= " + id + ", youtubeChannel= " + youtubeChannel + ", hobby= " + hobby + "]";
 	}
 		
 }
